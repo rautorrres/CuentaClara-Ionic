@@ -1,0 +1,20 @@
+:root {
+  --ion-font-family: 'Inter', Roboto, -apple-system, 'Segoe UI', sans-serif;
+  --ion-background-color: #f5f8f8;
+  --ion-text-color: #14232b;
+  --ion-color-primary: #0e7c7b;
+  --ion-color-primary-rgb: 14,124,123;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #0c6d6c;
+  --ion-color-primary-tint: #268988;
+  --ion-color-success: #1e8e5a;
+  --ion-color-warning: #f5a623;
+  --ion-color-danger: #c0392b;
+  --ion-tab-bar-background: #ffffff;
+}
+.ion-color-primary { --ion-color-base: var(--ion-color-primary); --ion-color-contrast: #fff; --ion-color-shade: var(--ion-color-primary-shade); --ion-color-tint: var(--ion-color-primary-tint); }
+.card { background:#fff; border:1px solid #e1ebec; border-radius:16px; padding:16px; margin:0 0 16px; }
+.etiqueta { font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:#5a6b73; font-weight:600; }
+.placeholder { border:2px dashed #b9cfd0; border-radius:16px; padding:24px 16px; text-align:center; color:#5a6b73; margin:0 0 16px; }
+.centro { text-align:center; }

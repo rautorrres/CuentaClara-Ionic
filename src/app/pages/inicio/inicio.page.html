@@ -1,0 +1,27 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-button fill="outline" shape="round" id="abrir-selector" slot="start" color="dark">
+      Casa Los Aromos <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+    </ion-button>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/notificaciones" aria-label="Notificaciones"><ion-icon slot="icon-only" name="notifications-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <div class="card" style="background:#1e8e5a;color:#fff">
+    <p class="etiqueta" style="color:#d6f0e3">Saldo neto global</p>
+    <h1 style="font-size:40px;font-weight:800;margin:4px 0">$48.500</h1>
+    <p>Te deben en total</p>
+  </div>
+  <p class="etiqueta">Integrantes</p>
+  <div class="placeholder">Lista de integrantes y saldos (contenido pendiente)</div>
+  <ion-button expand="block" fill="outline" shape="round" routerLink="/saldar-deuda">
+    <ion-icon slot="start" name="swap-horizontal-outline"></ion-icon> Saldar deudas
+  </ion-button>
+</ion-content>
+
+<!-- 04 Selector de grupos: hoja inferior -->
+  <ion-modal trigger="abrir-selector" [initialBreakpoint]="0.5" [breakpoints]="[0, 0.5, 0.9]">
+    <ng-template><app-selector-grupos></app-selector-grupos></ng-template>
+  </ion-modal>
